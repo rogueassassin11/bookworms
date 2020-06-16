@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- sep - meta description -->
+    <meta name="description" content="Bookworms is a social network site for book lovers to share, read, and write book reviews. You can also interact in online book clubs to discuss your favorite books.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/5c07a4f9e0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- LOGO FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Bookworms</title>
+  </head>
+
+  <body id="home">
+    <header id="hero">
+      <nav class="navbar navbar-expand-md navbar-dark bg-transparent py-3" id="main-nav">
+        <div class="container">
+          <a href="#home" class="navbar-brand"
+            ><span class="logo-font">Bookworms</span></a
+          >
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#features" class="nav-link">Features</a>
+              </li>
+              <li class="nav-item">
+                <a href="#reviews" class="nav-link">Book Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link"
+                  data-toggle="modal"
+                  data-target="#loginModal"
+                  >Log In</a
+                >
+              </li>
+            </ul>
+
+            <form action="" class="form-inline ml-2">
+              <input
+                type="text"
+                class="form-control mr-2 mb-2"
+                placeholder="Search books"
+              />
+              <button class="btn btn-outline-warning mb-2">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- HERO TEXT -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 d-none d-lg-block">
+            <!-- hero text on the left -->
+            <div class="heading-block">
+              <h1 class="display-4">There's a great book for everyone</h1>
+              <h3 class="mb-3">Discover yours now</h3>
+              <button class="btn btn-lg btn-warning">Learn More</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <!-- Form on the right -->
+            <div class="form-block">
+              <div class="card bg-light text-center card-form">
+                <div class="card-body">
+                  <h4>Newbie? Join us! It's free.</h4>
+                  <h5>Fill out this form to register.</h5>
+                  <form action="">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Password"
+                      />
+                    </div>
+                    <input
+                      type="submit"
+                      value="Submit"
+                      class="btn btn-outline-warning btn-block"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- LOGIN MODAL -->
+    <div class="modal" id="loginModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center">Log In</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-warning btn-block" data-dismiss="modal">
+              Log In
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <section id="features" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-3 text-secondary">
+          Find Your Next Fantastic Read
+        </h2>
+        <p class="lead text-center p-style1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          tenetur asperiores, similique fugit laboriosam et necessitatibus
+          repellendus praesentium voluptas aliquam?
+        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <i class="fab fa-connectdevelop fa-3x mb-3"></i>
+            <h3 class="text-secondary">Connect with fellow bookworms</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+              labore illum eius perferendis laborum non.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-pen-alt fa-3x mb-3"></i>
+            <h3 class="text-secondary">Read and write book reviews</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+              unde. Reiciendis provident accusantium vel dicta.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i class="far fa-comments fa-3x mb-3"></i>
+            <h3 class="text-secondary">Interact in online book clubs</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis,
+              quo iusto quam dolore dicta nemo!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOK REVIEWS -->
+    <section id="reviews" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-3 text-secondary">
+          Check Out Our Latest Book Reviews
+        </h2>
+        <p class="lead text-center p-style1 mb-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+          tempora incidunt esse, amet praesentium a.
+        </p>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <div class="card flex-row mb-4 box-shadow h-md-250">
+              <img
+                src="img/book1.png"
+                alt="Journey to the Stars"
+                class="card-img-right flex-auto"
+                style="width: 12.5rem; height: 16rem;"
+              />
+              <div class="card-body d-flex flex-column align-items-start mb-resp">
+                <strong class="d-inline-block mb-2 text-warning"
+                  >Young Adult</strong
+                >
+                <div class="title-author">
+                  <h3 class="mb-0">Journey to the Stars</h3>
+                  <div class="mb-1 text-muted">Review by Harry Potter</div>
+                </div>
+                <p class="card-text mb-auto d-none d-lg-flex">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Soluta alias ipsa repudiandae, labore optio neque.
+                </p>
+                <a href="#" class="text-warning">Read more</a>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card flex-row mb-4 box-shadow h-md-250">
+
+              <img
+                src="img/book2.png"
+                alt="Sunsets with Annie"
+                class="card-img-right flex-auto"
+                style="width: 12.5rem; height: 16rem;"
+              />
+
+              <div class="card-body d-flex flex-column align-items-start mb-resp">
+                <strong class="d-inline-block mb-2 text-warning"
+                  >Romance</strong
+                >
+                <div class="title-author">
+                  <h3 class="mb-0">Sunsets with Annie</h3>
+                  <div class="mb-1 text-muted">Review by Hermione Granger</div>
+                </div>
+                <p class="card-text mb-auto d-none d-lg-flex">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Soluta alias ipsa repudiandae, labore optio neque.
+                </p>
+                <a href="#" class="text-warning">Read more</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card flex-row mb-4 box-shadow h-md-250">
+              <img
+                src="img/book5.png"
+                alt="Futurama"
+                class="card-img-right flex-auto"
+                style="width: 12.5rem; height: 16rem;"
+              />
+              <div class="card-body d-flex flex-column align-items-start mb-resp">
+                <strong class="d-inline-block mb-2 text-warning"
+                  >Non-fiction</strong
+                >
+                <div class="title-author">
+                  <h3 class="mb-0">Futurama</h3>
+                  <div class="mb-1 text-muted">Review by Ronald Weasley</div>
+                </div>
+                
+                <p class="card-text mb-auto d-none d-lg-flex">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Soluta alias ipsa repudiandae, labore optio neque.
+                </p>
+                <a href="#" class="text-warning">Read more</a>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card flex-row mb-4 box-shadow h-md-250">
+              <img
+                src="img/book8.png"
+                alt="My High Garden"
+                class="card-img-right flex-auto"
+                style="width: 12.5rem; height: 16rem;"
+              />
+              <div class="card-body d-flex flex-column align-items-start mb-resp">
+                <strong class="d-inline-block mb-2 text-warning"
+                  >Dystopia</strong
+                >
+                <div class="title-author">
+                  <h3 class="mb-0">My High Garden</h3>
+                 <div class="mb-1 text-muted">Review by Severus Snape</div>
+                </div>
+                
+                <p class="card-text mb-auto d-none d-lg-flex">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Soluta alias ipsa repudiandae, labore optio neque.
+                </p>
+                <a href="#" class="text-warning">Read more</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn btn-warning mx-auto">See More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOP READS -->
+    <section id="reads" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-3 text-secondary">
+          This Month's Top Reads
+        </h2>
+        <p class="lead text-center p-style1 mb-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+          tempora incidunt esse, amet praesentium a.
+        </p>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <div class="card flex-row mb-4 box-shadow h-md-250">
+              <img
+              src="img/book3.png"
+              alt="About Last Night"
+              class="card-img-right flex-auto"
+              style="width: 12.5rem; height: 16rem;"
+            />
+              <div class="card-body d-flex flex-column align-items-start mb-resp">
+                <strong class="d-inline-block mb-2 text-warning"
+                  >Comedy</strong
+                >
+                <div class="title-author">
+                  <h3 class="mb-0">About Last Night</h3>
+                  <div class="mb-1 text-muted">By Adora Montminy</div>
+                </div>
+                
+                <p class="card-text mb-auto d-none d-lg-flex">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Soluta alias ipsa repudiandae, labore optio neque.
+                </p>
+                <a href="#" class="text-warning">Read more</a>
+              </div>
+             
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card flex-row mb-4 box-shadow h-md-250">
+
+              <img
+                src="img/book4.png"
+                alt="Sending Some Love"
+                class="card-img-right flex-auto"
+                style="width: 12.5rem; height: 16rem;"
+              />
+              <div class="card-body d-flex flex-column align-items-start mb-resp">
+                <strong class="d-inline-block mb-2 text-warning"
+                  >Romance</strong
+                >
+                <div class="title-author">
+                  <h3 class="mb-0">Sending Some Love</h3>
+                  <div class="mb-1 text-muted">By Rene Abott</div>
+                </div>
+                <p class="card-text mb-auto d-none d-lg-flex">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Soluta alias ipsa repudiandae, labore optio neque.
+                </p>
+                <a href="#" class="text-warning">Read more</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn btn-warning mx-auto">See More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="py-5 bg-secondary">
+      <div class="container">
+        <h2 class="text-center mb-3 text-primary">
+          Join Our Newsletter
+        </h2>
+        <p class="lead text-center p-style1 mb-5 text-primary">
+          For the latest news, promotions, and events straight to your inbox
+        </p>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-user"> </i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Name" />
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-envelope"> </i>
+                </span>
+              </div>
+              <input type="email" class="form-control" placeholder="Email" />
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button
+              type="submit"
+              value="Subscribe"
+              class="btn btn-outline-warning btn-block"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="py-5 bg-primary text-secondary">
+      <div class="container">
+        <div class="footer-logo">
+          <a href="#home"
+            ><p class="logo-font text-secondary text-center">Bookworms</p></a
+          >
+        </div>
+        <div class="footer-nav mb-2">
+          <p class="text-center text-secondary">
+            <a href="#features">About</a> | <a href="#">Advertise</a> |
+            <a href="#">Contact</a> |
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+        <div class="footer-social mb-2">
+          <p class="text-center">
+            <a href="http://twitter.com" class="mr-3 twit text-secondary">
+              <i class="fab fa-twitter"></i></a>
+            </a>
+            <a href="http://facebook.com" class="mr-3 face text-secondary">
+              <i class="fab fa-facebook"></i></a>
+            </a>
+            <a href="http://instagram.com" class="mr-3 insta text-secondary">
+              <i class="fab fa-instagram"></i></a>
+            </a>
+            <a href="http://linkedin.com" class="mr-3 link text-secondary">
+              <i class="fab fa-linkedin-in"></i></a>
+            </a>
+          </p>
+        </div>
+        <div class="footer-copyright">
+          <p class="text-muted text-center">Copyright &copy; Bookworms, 2020</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CUSTOM SCRIPTS -->
+    <script>
+      //Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+
+      //Smooth scroll
+      $("#main-nav a").on("click", function (e) {
+        // Check for hash value
+        if (this.hash !== "") {
+          //Prevent default behavior
+          e.preventDefault();
+
+          //Store hash
+          const hash = this.hash;
+
+          // Animate smooth scroll
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            900,
+            function () {
+              // Add hash to url after scroll
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+
+    </script>
+  </body>
+</html>

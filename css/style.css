@@ -1,0 +1,86 @@
+/*---------------------------*/
+/* VARIABLES
+/*---------------------------*/
+/*bg-primary cream*/
+/*bg-secondary brown*/
+/*bg-warning peach */
+/*---------------------------*/
+/* REUSABLES
+/*---------------------------*/
+.p-style1 {
+  width: 70%;
+  margin-left: 15%; }
+
+/*---------------------------*/
+/* NAVBAR + HERO
+/*---------------------------*/
+.navbar {
+  border-bottom: 2px solid #fff; }
+
+.navbar .nav-link {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding-right: 1rem !important; }
+
+.logo-font {
+  font-size: 1.5rem;
+  font-family: "Patua One", cursive; }
+
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh; }
+
+.heading-block {
+  margin-top: 5rem;
+  color: #fff; }
+
+.form-block {
+  margin-top: 5rem; }
+
+/*---------------------------*/
+/* FEATURES
+/*---------------------------*/
+#features .fab,
+#features .far,
+#features .fas {
+  color: #ff926b; }
+
+/*---------------------------*/
+/* REVIEWS + TOP READS
+/*---------------------------*/
+#reviews a {
+  text-decoration: none; }
+
+@media (max-width: 991.98px) {
+  .mb-resp {
+    justify-content: space-evenly; }
+
+  .title-author h3 {
+    font-size: 1.4rem; } }
+/*---------------------------*/
+/* FOOTER
+/*---------------------------*/
+#main-footer .footer-logo a {
+  text-decoration: none; }
+
+#main-footer .footer-nav a {
+  text-decoration: none;
+  color: #4d3e3e;
+  padding: 0.5rem; }
+
+#main-footer .footer-nav a:hover {
+  color: #ff926b; }
+
+.twit .fab:hover {
+  color: #1da1f2; }
+
+.face .fab:hover {
+  color: #1877f2; }
+
+.insta .fab:hover {
+  color: #c32aa3; }
+
+.link .fab:hover {
+  color: #007bb5; }
